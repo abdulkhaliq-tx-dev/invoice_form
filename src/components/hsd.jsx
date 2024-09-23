@@ -119,9 +119,11 @@ export default function InvoiceForms() {
           onSubmit={handleSubmit}
           className="flex items-center jutify-center gap-6"
         >
-          
+          <button type="submit" className="p-6 bg-purple-500">
+            Submit
+          </button>
 
-          <div className="flex-1 h-[1076px] ">
+          <div className="flex-1 ">
             <div className="w-full border border-[#D0D5DD] rounded-3xl p-6 flex flex-col gap-8">
               <div className="flex flex-col gap-4">
                 <h3 className="text-[#101828] text-2xl font-semibold">
@@ -144,11 +146,8 @@ export default function InvoiceForms() {
                         value={values.billFrom.name}
                         name="billFrom.name"
                       />
-                      {errors.billFrom?.name && (
-                        <small className="text-red-500">
-                          {errors.billFrom.name}
-                        </small>
-                      )}
+                                           {errors.billFrom?.name && <small className="text-red-500">{errors.billFrom.name}</small>}
+
                     </div>
                     <div className="flex flex-col gap-1.5 ">
                       <label
@@ -165,11 +164,7 @@ export default function InvoiceForms() {
                         value={values.billFrom.email}
                         name="billFrom.email"
                       />
-                      {errors.billFrom?.email && (
-                        <small className="text-red-500">
-                          {errors.billFrom.email}
-                        </small>
-                      )}
+                     {errors.billFrom?.email && <small className="text-red-500">{errors.billFrom.email}</small>}
                     </div>
                   </div>
                   <div className="loaction-info flex gap-4">
@@ -188,11 +183,8 @@ export default function InvoiceForms() {
                         value={values.billFrom.country}
                         name="billFrom.country"
                       />
-                      {errors.billFrom?.country && (
-                        <small className="text-red-500">
-                          {errors.billFrom.country}
-                        </small>
-                      )}
+                                           {errors.billFrom?.country && <small className="text-red-500">{errors.billFrom.country}</small>}
+
                     </div>
                     <div className="flex flex-col gap-1.5 ">
                       <label
@@ -209,11 +201,8 @@ export default function InvoiceForms() {
                         value={values.billFrom.city}
                         name="billFrom.city"
                       />
-                      {errors.billFrom?.city && (
-                        <small className="text-red-500">
-                          {errors.billFrom.city}
-                        </small>
-                      )}
+                                           {errors.billFrom?.city && <small className="text-red-500">{errors.billFrom.city}</small>}
+
                     </div>{" "}
                     <div className="flex flex-col gap-1.5 ">
                       <label
@@ -230,11 +219,8 @@ export default function InvoiceForms() {
                         value={values.billFrom.postal}
                         name="billFrom.postal"
                       />
-                      {errors.billFrom?.postal && (
-                        <small className="text-red-500">
-                          {errors.billFrom.postal}
-                        </small>
-                      )}
+                                           {errors.billFrom?.postal && <small className="text-red-500">{errors.billFrom.postal}</small>}
+
                     </div>
                   </div>
                   <div className="address">
@@ -253,11 +239,8 @@ export default function InvoiceForms() {
                         value={values.billFrom.address}
                         name="billFrom.address"
                       />
-                      {errors.billFrom?.address && (
-                        <small className="text-red-500">
-                          {errors.billFrom.address}
-                        </small>
-                      )}
+                                           {errors.billFrom?.address && <small className="text-red-500">{errors.billFrom.address}</small>}
+
                     </div>
                   </div>
                 </div>
@@ -283,11 +266,8 @@ export default function InvoiceForms() {
                         value={values.billTo.name}
                         name="billTo.name"
                       />
-                      {errors.billTo?.name && (
-                        <small className="text-red-500">
-                          {errors.billTo.name}
-                        </small>
-                      )}
+                                           {errors.billTo?.name && <small className="text-red-500">{errors.billTo.name}</small>}
+
                     </div>
                     <div className="flex flex-col gap-1.5 ">
                       <label
@@ -304,11 +284,8 @@ export default function InvoiceForms() {
                         value={values.billTo.email}
                         name="billTo.email"
                       />
-                      {errors.billTo?.email && (
-                        <small className="text-red-500">
-                          {errors.billTo.email}
-                        </small>
-                      )}
+                                                                 {errors.billTo?.email && <small className="text-red-500">{errors.billTo.email}</small>}
+
                     </div>
                   </div>
                   <div className="loaction-info flex gap-4">
@@ -327,11 +304,8 @@ export default function InvoiceForms() {
                         value={values.billTo.country}
                         name="billTo.country"
                       />
-                      {errors.billTo?.country && (
-                        <small className="text-red-500">
-                          {errors.billTo.country}
-                        </small>
-                      )}
+                                                                 {errors.billTo?.country && <small className="text-red-500">{errors.billTo.country}</small>}
+
                     </div>
                     <div className="flex flex-col gap-1.5 ">
                       <label
@@ -348,11 +322,8 @@ export default function InvoiceForms() {
                         value={values.billTo.city}
                         name="billTo.city"
                       />
-                      {errors.billTo?.city && (
-                        <small className="text-red-500">
-                          {errors.billTo.city}
-                        </small>
-                      )}
+                                                                 {errors.billTo?.city && <small className="text-red-500">{errors.billTo.city}</small>}
+
                     </div>{" "}
                     <div className="flex flex-col gap-1.5 ">
                       <label
@@ -369,11 +340,8 @@ export default function InvoiceForms() {
                         onChange={handleChange}
                         name="billTo.postal"
                       />
-                      {errors.billTo?.postal && (
-                        <small className="text-red-500">
-                          {errors.billTo.postal}
-                        </small>
-                      )}
+                                                                 {errors.billTo?.postal && <small className="text-red-500">{errors.billTo.postal}</small>}
+
                     </div>
                   </div>
                   <div className="address">
@@ -392,11 +360,7 @@ export default function InvoiceForms() {
                         value={values.billTo.address}
                         name="billTo.address"
                       />
-                      {errors.billTo?.address && (
-                        <small className="text-red-500">
-                          {errors.billTo.address}
-                        </small>
-                      )}
+                      {errors.billTo?.address && <small className="text-red-500">{errors.billTo.address}</small>}
                     </div>
                   </div>
                 </div>
@@ -420,9 +384,7 @@ export default function InvoiceForms() {
                       onChange={handleChange}
                       value={values.date}
                     />
-                    {errors.date && (
-                      <small className="text-red-500">{errors.date}</small>
-                    )}
+                    {errors.date && <small className="text-red-500">{errors.date}</small>}
                   </div>
                   <div className="flex flex-col gap-1.5 ">
                     <label
@@ -449,11 +411,7 @@ export default function InvoiceForms() {
                       <option value="net 20 days">Net 20 Days</option>
                       <option value="net 30 days">Net 30 Days</option>
                     </select>
-                    {errors.paymentTerms && (
-                      <small className="text-red-500">
-                        {errors.paymentTerms}
-                      </small>
-                    )}
+                    {errors.paymentTerms && <small className="text-red-500">{errors.paymentTerms}</small>}
                   </div>
                 </div>
                 <div className="project-description">
@@ -472,11 +430,7 @@ export default function InvoiceForms() {
                       value={values.description}
                       name="description"
                     />
-                    {errors.description && (
-                      <small className="text-red-500">
-                        {errors.description}
-                      </small>
-                    )}
+                    {errors.description && <small className="text-red-500">{errors.description}</small>}
                   </div>
                 </div>
               </div>
@@ -485,88 +439,61 @@ export default function InvoiceForms() {
                   Items List
                 </h3>
                 <div className="flex flex-col gap-4">
-                  {items.map((item, index) => (
-                    <div
-                      key={index}
-                      className="items-list flex gap-4 items-center"
-                    >
-                      <div className="flex flex-col gap-1.5 ">
-                        <label
-                          htmlFor={`Item Name-${index}`}
-                          className="text-[#344054] font-medium text-sm"
-                        >
-                          Item Name
-                        </label>
-                        <input
-                          type="text"
-                          className="w-[210px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
-                          onBlur={handleBlur}
-                          onChange={(e) => handleItemChange(index, e)}
-                          value={items.name}
-                          name="name" // Changed to just "name"
-                        />
-                      </div>
-
-                      <div className="flex flex-col gap-1.5 ">
-                        <label
-                          htmlFor={`Quantity-${index}`}
-                          className="text-[#344054] font-medium text-sm"
-                        >
-                          Qty.
-                        </label>
-                        <input
-                          type="number"
-                          className="w-[110px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
-                          onBlur={handleBlur}
-                          onChange={(e) => handleItemChange(index, e)}
-                          value={item.quantity}
-                          name="quantity" // Changed to just "quantity"
-                        />
-                      </div>
-
-                      <div className="flex flex-col gap-1.5 ">
-                        <label
-                          htmlFor={`Price-${index}`}
-                          className="text-[#344054] font-medium text-sm"
-                        >
-                          Price
-                        </label>
-                        <input
-                          type="number"
-                          className="w-[110px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
-                          onBlur={handleBlur}
-                          onChange={(e) => handleItemChange(index, e)}
-                          value={item.price}
-                          name="price" // Changed to just "price"
-                        />
-                      </div>
-
-                      <div className="flex flex-col gap-1.5 ">
-                        <label
-                          htmlFor={`Total-${index}`}
-                          className="text-[#344054] font-medium text-sm"
-                        >
-                          Total
-                        </label>
-                        <input
-                          type="number"
-                          className="w-[110px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
-                          value={item.total}
-                          name="total"
-                          disabled
-                        />
-                      </div>
-
-                      <div className="flex flex-col gap-1.5 mt-6 justify-center">
-                        <img
-                          src={TrashIcon}
-                          alt="Delete"
-                          onClick={() => handleDelete(index)} // Pass the index to handleDelete
-                          style={{ cursor: "pointer" }} // Add a cursor style for better UX
-                        />
-                      </div>
+                 {items.map((item, index) => (
+                  <div key={index} className="items-list flex gap-4 items-center">
+                    {/* Item Name */}
+                    <div className="flex flex-col gap-1.5 ">
+                      <label htmlFor={`items.${index}.name`} className="text-[#344054] font-medium text-sm">Item Name</label>
+                      <input
+                        type="text"
+                        className="w-[210px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
+                        onBlur={handleBlur}
+                        onChange={(e) => handleItemChange(index, e)}
+                        value={item.name}
+                        name={`items.${index}.name`}
+                      />
+                      {errors.items?.[index]?.name && <small className="text-red-500">{errors.items[index].name}</small>}
                     </div>
-                  ))}
+                    {/* Quantity */}
+                    <div className="flex flex-col gap-1.5 ">
+                      <label htmlFor={`items.${index}.quantity`} className="text-[#344054] font-medium text-sm">Qty.</label>
+                      <input
+                        type="number"
+                        className="w-[110px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
+                        onBlur={handleBlur}
+                        onChange={(e) => handleItemChange(index, e)}
+                        value={item.quantity}
+                        name={`items.${index}.quantity`}
+                      />
+                      {errors.items?.[index]?.quantity && <small className="text-red-500">{errors.items[index].quantity}</small>}
+                    </div>
+                    {/* Price */}
+                    <div className="flex flex-col gap-1.5 ">
+                      <label htmlFor={`items.${index}.price`} className="text-[#344054] font-medium text-sm">Price</label>
+                      <input
+                        type="number"
+                        className="w-[110px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
+                        onBlur={handleBlur}
+                        onChange={(e) => handleItemChange(index, e)}
+                        value={item.price}
+                        name={`items.${index}.price`}
+                      />
+                      {errors.items?.[index]?.price && <small className="text-red-500">{errors.items[index].price}</small>}
+                    </div>
+                    <div className="flex flex-col gap-1.5 ">
+                      <label className="text-[#344054] font-medium text-sm">Total</label>
+                      <input
+                        type="text"
+                        className="w-[110px] h-[44px] py-2.5 px-3.5 border border-[#D0D5DD] rounded-lg"
+                        value={item.total}
+                        readOnly
+                      />
+                    </div>
+                    <button type="button" onClick={() => handleDelete(index)} className="w-10 h-10">
+                      <img src={TrashIcon} alt="Delete Item" />
+                    </button>
+                  </div>
+                ))}
 
                   <div className="add-items-btn">
                     <button
@@ -581,164 +508,6 @@ export default function InvoiceForms() {
               </div>
             </div>
           </div>
-
-
-          <div className="flex-1 h-[1076px]">
-            <div className="w-full h-[1076px]  rounded-3xl p-6 flex flex-col gap-8 bg-[#F5F5F5]">
-              <h2 className="text-[#101828] text-2xl font-semibold">Preview</h2>
-              <div className="preview-invoice flex flex-col gap-8      rounded-2xl bg-white drop-shadow-2xl p-6">
-                <h4 className="font-semibold text-lg text-[#101828] border-b border-b-[#EAECF0] h-[47px]">
-                  New Invoice
-                </h4>
-                <div className=" flex items-center gap-4 ">
-                  <div className="flex flex-col gap-4 w-6/12">
-                    <label
-                      htmlFor="invoice date"
-                      className="text-[#76787D] text-base font-normal"
-                    >
-                      Invoice Date
-                    </label>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.date}
-                    </h4>
-                  </div>{" "}
-                  <div className="flex flex-col gap-4 w-6/12 ">
-                    <label
-                      htmlFor="invoice date"
-                      className="text-[#76787D] text-base font-normal"
-                    >
-                      Payment Terms
-                    </label>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.paymentTerms}
-                    </h4>
-                  </div>
-                </div>{" "}
-                <div className=" flex items-center gap-4 ">
-                  <div className="flex flex-col gap-4 w-6/12">
-                    <label
-                      htmlFor="invoice date"
-                      className="text-[#76787D] text-base font-normal"
-                    >
-                      Bill From
-                    </label>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billFrom.name}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billFrom.email}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billFrom.address}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billFrom.city} {values.billFrom.postal}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billFrom.country}
-                    </h4>
-                  </div>{" "}
-                  <div className="flex flex-col gap-4 w-6/12 ">
-                    <label
-                      htmlFor="invoice date"
-                      className="text-[#76787D] text-base font-normal"
-                    >
-                      Bill To
-                    </label>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billTo.name}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billTo.email}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billTo.address}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billTo.city} {values.billTo.postal}
-                    </h4>
-                    <h4 className="font-medium text-base text-[#101828]">
-                      {values.billTo.country}
-                    </h4>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <label
-                    htmlFor="invoice date"
-                    className="text-[#76787D] text-base font-normal"
-                  >
-                    Project Description
-                  </label>
-                  <h4 className="font-medium text-base text-[#101828]">
-                    {values.description}
-                  </h4>
-
-                  <table className="table">
-                    <thead className="bg-[#f5f5f5] h-[38px] rounded">
-                      <tr>
-                        <th className="p-2 text-start text-base font-normal text-[#76787D]">
-                          Item
-                        </th>
-                        <th className="p-2 text-start text-base font-normal text-[#76787D]">
-                          Qty.
-                        </th>
-                        <th className="p-2 text-start text-base font-normal text-[#76787D]">
-                          Price
-                        </th>
-                        <th className="p-2 text-base font-normal text-[#76787D] text-end">
-                          Total Amount
-                        </th>
-                      </tr>
-                    </thead>
-
-                    <tbody className="">
-                      {items.map((item, index) => (
-                        <tr key={index}>
-                          <td className="p-2 text-[#101828] text-start text-base font-medium">
-                            {item.name}
-                          </td>
-                          <td className="p-2 text-[#101828] text-start text-base font-medium">
-                            {item.quantity}
-                          </td>
-                          <td className="p-2 text-[#101828] text-start text-base font-medium">
-                            {item.price}
-                          </td>
-                          <td className="p-2 text-[#101828] text-end text-base font-medium">
-                            {item.total}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                  <hr />
-                </div>
-                <div className="flex flex-col gap-4 items-end w-full ">
-                  <div className="flex justify-between items-center w-6/12 ">
-                    <h4 className="text-base font-semibold">Subtotal</h4>
-                    <h4 className="text-base font-semibold">
-                      {" "}
-                      $<span className="ml-2">{subTotal.toFixed(2)}</span>
-                    </h4>
-                  </div>
-                  <div className="flex justify-between items-center w-6/12 ">
-                    <h4 className="text-base font-semibold">Tax</h4>
-                    <h4 className="text-base font-semibold">10%</h4>
-                  </div>
-                  <div className="flex justify-between items-center w-6/12 ">
-                    <h4 className="text-xl font-semibold">Total</h4>
-                    <h4 className="text-xl font-semibold">
-                      {" "}
-                      $<span className="ml-2">{total.toFixed(2)}</span>
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button type="submit" className="p-6 bg-purple-500">
-            Submit
-          </button>
         </form>
       </div>
     </>
